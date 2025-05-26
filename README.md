@@ -1,4 +1,4 @@
-This Python script performs a multi-objective energy system optimization to determine the best combination of renewable energy technologies—solar, wind, battery storage, and biogas—to supply both electricity and heat demands over time, based on hourly data. The goal is to minimize levelized cost of energy (LCOE), unmet demand, and CO₂ emissions, using a weighted optimization approach.
+This Python script performs a multi-objective energy system optimization to determine the best combination of renewable energy technologies solar, wind, battery storage, and biogas—to supply both electricity and heat demands over time, based on hourly data. The goal is to minimize levelized cost of energy (LCOE), unmet demand, and CO₂ emissions, using a weighted optimization approach.
 
 The script begins by importing necessary libraries including pandas for data handling, numpy for numerical operations, matplotlib for plotting, scipy.optimize.minimize for numerical optimization, and tqdm for progress tracking. It then loads hourly input data from four CSV files representing electricity demand, heat demand, solar energy availability, and wind energy availability.
 
@@ -14,7 +14,7 @@ Battery state of charge and flow.
 
 Total biogas consumption, energy met, unmet demand, operational and capital expenditures, LCOE, and CO₂ emissions from biogas combustion.
 
-The minimize() function is then used to find the optimal capacities (sizes) of the five system components—solar panels, wind turbines, battery, biogas generator, and a power converter—subject to the constraint that at least 97% of electricity and heat demand must be met.
+The minimize() function is then used to find the optimal capacities (sizes) of the five system components solar panels, wind turbines, battery, biogas generator, and a power converter—subject to the constraint that at least 97% of electricity and heat demand must be met.
 
 If the optimizer finds a solution, additional performance indicators are calculated, including specific CO₂ emissions, total battery discharge, unmet electricity/heat, and biomass needed to produce the consumed biogas. All of these results are stored in a dictionary and appended to a results list.
 
