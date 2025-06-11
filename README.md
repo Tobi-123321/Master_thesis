@@ -19,3 +19,5 @@ The minimize() function is then used to find the optimal capacities (sizes) of t
 If the optimizer finds a solution, additional performance indicators are calculated, including specific CO₂ emissions, total battery discharge, unmet electricity/heat, and biomass needed to produce the consumed biogas. All of these results are stored in a dictionary and appended to a results list.
 
 After all weight combinations are tested, a 3D plot visualizes the trade off between unmet demand, LCOE, and CO₂ emissions. Finally, all optimization results are saved into a CSV file (optimization_results_t32019pareto.csv) and printed for review.
+
+The weight configuration #-out is the optimal-optimal confuguration presented in the master thesis. To run the code fast and avoid Pareto front use those values as weight distribution. 
